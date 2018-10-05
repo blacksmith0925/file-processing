@@ -23,9 +23,7 @@ int change_file(const char *dir,char** file_name)
         strcat(str2,FileInfo.name);
         printf("%s\n",str2);
         fp = fopen(str1,"r");
-
         fq = fopen(str2,"w");
-
         if(fp == NULL)
             {
                 printf("Can't open file1\n");
@@ -84,7 +82,6 @@ int change_file(const char *dir,char** file_name)
                     }
                 fclose(fp);
                 fclose(fq);
-
             }
         _findclose(Handle);
         }
